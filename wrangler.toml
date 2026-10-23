@@ -1,0 +1,12 @@
+name = "airoom"
+main = "worker/worker.ts"
+compatibility_date = "2024-07-01"
+
+[durable_objects]
+bindings = [
+  { name = "AIROOM_DO", class_name = "AIRoomDO" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["AIRoomDO"]
